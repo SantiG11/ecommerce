@@ -1,4 +1,4 @@
-Sneakercs Ecommerce site
+Sneakers Ecommerce site
 
 This project will consist on recreate the ecommerce design proposed in the frontend mentor site.
 My goal is to complete it using React to build it as accurate as possilbe.
