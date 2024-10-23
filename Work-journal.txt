@@ -1,0 +1,2 @@
+23/10/24 Today I'm starting the structure of this ecommerce project. I already have a basic figma prototype for the desktop version wich will be my first goal to complete. 
+I'll work in the header section first for the desktop version
