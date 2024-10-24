@@ -1,0 +1,5 @@
+.nav-bar {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+}

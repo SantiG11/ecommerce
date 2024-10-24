@@ -1,10 +1,12 @@
 import "./App.css";
-import { HeaderComponent, Logo } from "../src/components/index";
+import { HeaderComponent, ProductContainer } from "../src/components/index";
 
 function App() {
   return (
     <>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent />
+      <hr />
+      <ProductContainer />
     </>
   );
 }

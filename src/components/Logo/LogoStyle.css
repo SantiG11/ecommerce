@@ -1,3 +1,9 @@
-h1 {
-  color: blue;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 1rem;
 }
