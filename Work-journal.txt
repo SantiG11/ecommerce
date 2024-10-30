@@ -2,3 +2,9 @@
 I'll work in the header section first for the desktop version
 
 24/10/24 I finished a basic structure for the header and started with the product container structure.
+
+28/10/24 Added all the images and information of the product. Now I'm working on the details to make it look as close as possivble to the final result.
+
+29/10/24 Added the cart component and hover styles for each selectable item.
+
+30/10/24 Finished a functioning layout for desktop. I got to keep working on the responsiveness but now I'm starting to giving functionality

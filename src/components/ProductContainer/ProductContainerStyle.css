@@ -1,4 +1,9 @@
 .product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
   width: 80vw;
-  border: 1px solid #000;
+  margin-top: 5vh;
+  padding: 1rem;
+  max-width: 1400px;
 }

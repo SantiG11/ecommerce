@@ -1,0 +1,31 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: -175px;
+  border-radius: 15px;
+  box-shadow: -8px 15px 32px -23px rgba(29, 32, 37, 1);
+  width: 350px;
+  background-color: var(--white);
+}
+
+.cart-header {
+  height: 4rem;
+  border-bottom: 1px solid var(--grayish-blue);
+  color: var(--black);
+  display: flex;
+  align-items: start;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.cart-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  font-weight: 700;
+
+  color: var(--dark-grayish-blue);
+}

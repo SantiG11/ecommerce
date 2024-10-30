@@ -3,11 +3,11 @@ import { HeaderComponent, ProductContainer } from "../src/components/index";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <HeaderComponent />
-      <hr />
+      <div className="horizontal-line"></div>
       <ProductContainer />
-    </>
+    </div>
   );
 }
 

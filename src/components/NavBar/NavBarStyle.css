@@ -2,4 +2,5 @@
   display: flex;
   width: 40%;
   justify-content: space-evenly;
+  min-width: 400px;
 }

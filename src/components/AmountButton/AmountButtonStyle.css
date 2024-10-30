@@ -1,0 +1,26 @@
+.amount-button {
+  display: inline-flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.minus,
+.plus,
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--light-grayish-blue);
+}
+
+.amount {
+  padding: 0 2rem;
+  font-weight: bold;
+}
+
+.minus:hover,
+.plus:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

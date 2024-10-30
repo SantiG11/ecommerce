@@ -1,0 +1,33 @@
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px;
+  min-width: 175px;
+  max-width: 250px;
+  flex: 1;
+  gap: 1rem;
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.add-to-cart-btn:hover {
+  cursor: pointer;
+  background-color: var(--pale-orange);
+}
+
+.cart-icon {
+  width: 1rem;
+}
+
+.add-to-cart {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .add-to-cart-btn {
+    padding: 12px;
+  }
+}

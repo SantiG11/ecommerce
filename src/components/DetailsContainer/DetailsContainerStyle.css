@@ -1,0 +1,60 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 500px;
+  user-select: none;
+}
+
+.product-name {
+  font-size: 2.3rem;
+  text-wrap: wrap;
+}
+
+.company-name {
+  font-size: 0.8rem;
+}
+
+.company-name,
+.product-description {
+  color: var(--dark-grayish-blue);
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.discount {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 5px;
+  height: 70%;
+  font-size: 0.8rem;
+}
+
+.last-price {
+  color: var(--dark-grayish-blue);
+  font-weight: bold;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+}
+
+.cart-buttons-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-wrap: nowrap;
+  gap: 1rem;
+}

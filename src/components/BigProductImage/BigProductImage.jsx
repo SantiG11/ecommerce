@@ -1,3 +1,5 @@
+import "./BigProductImage.css";
+
 export function BigProductImage() {
   return (
     <div className="big-product-image-container">

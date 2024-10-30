@@ -1,0 +1,19 @@
+.carousel {
+  display: flex;
+  width: 78%;
+  max-width: 700px;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.product-image {
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.product-image:hover {
+  cursor: pointer;
+  outline: 3px solid var(--orange);
+  opacity: 0.5;
+}
