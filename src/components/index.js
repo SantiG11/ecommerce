@@ -1,6 +1,9 @@
+export * from './AddToCartButton/AddToCartButton';
 export * from './AmountButton/AmountButton';
 export * from './BigProductImage/BigProductImage';
+export * from './Cart/Cart';
 export * from './CartButton/CartButton';
+export * from './CartItem/CartItem';
 export * from './DetailsContainer/DetailsContainer';
 export * from './HeaderComponent/HeaderComponent';
 export * from './Logo/Logo';
@@ -9,4 +12,5 @@ export * from './NavLink.jsx/NavLink';
 export * from './ProductContainer/ProductContainer';
 export * from './ProductImages/ProductImages';
 export * from './ProductImagesCarousel/ProductImagesCarousel';
+export * from './TestComponent';
 export * from './UserIcon/UserIcon';

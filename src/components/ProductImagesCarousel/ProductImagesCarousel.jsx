@@ -1,28 +1,31 @@
+import { useState } from "react";
 import "./ProductImageCarouselStyle.css";
 
-export function ProductImagesCarousel() {
+export function ProductImagesCarousel({ smallImages, method, selectedImage }) {
+  const [images, setImages] = useState(smallImages);
+  const [imageSelected, setImageSelected] = useState(selectedImage);
+
+  const handleSelection = (image) => {
+    setImageSelected(image);
+  };
+
   return (
     <div className="carousel">
-      <img
-        src="src\mocks\images\image-product-1.jpg"
-        alt="product-image"
-        className="product-image"
-      />
-      <img
-        src="src\mocks\images\image-product-2.jpg"
-        alt="product-image"
-        className="product-image"
-      />
-      <img
-        src="src\mocks\images\image-product-3.jpg"
-        alt="product-image"
-        className="product-image"
-      />
-      <img
-        src="src\mocks\images\image-product-4.jpg"
-        alt="product-image"
-        className="product-image"
-      />
+      {images.map((image, index) => {
+        return (
+          <img
+            onClick={() => {
+              method(index), handleSelection(image);
+            }}
+            src={`${image}`}
+            alt="product-image"
+            className={`product-image ${
+              image === imageSelected ? "selected" : ""
+            }`}
+            key={index}
+          />
+        );
+      })}
     </div>
   );
 }

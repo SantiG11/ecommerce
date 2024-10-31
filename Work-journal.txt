@@ -7,4 +7,13 @@ I'll work in the header section first for the desktop version
 
 29/10/24 Added the cart component and hover styles for each selectable item.
 
-30/10/24 Finished a functioning layout for desktop. I got to keep working on the responsiveness but now I'm starting to giving functionality
+30/10/24 Finished a functioning layout for desktop. I got to keep working on the responsiveness but now I'm starting to giving functionality. Now I started a branch to keep going with the project defining a class for the items and I'm going to use context to store the global variables like items.
+
+31/10/24 I decided to define a class to create items from it. I import it to the context to store it there and obtain the items in the ProductContainer component. Then from the item selected I pass it as props to the children so all are maniuplating the same item.
+I already made the big image and the carousel to display the image and change the big image selecting one from the carousel, by the other hand, the Details container shows the information of the product and with the AmountButton it can change the amount of the item. 
+
+Now I'm working on adding the product to the cart, I'm not sure if I should let the amount button to change the amount on the cart or if only let it modify it when the add to cart button is clicked. 
+
+I'll start just adding the product with the amount selected, reset the amount, and not letting modify it after added.
+
+I created a cartItems state to set the items that will be added to the cart with the addToCart component. And the cart component detect's if there's any item added, and create a cartItem component to display the product information.
