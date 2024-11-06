@@ -4,12 +4,19 @@ import { EcommerceContext } from "../../context/EcommerceContext";
 import { CartItem } from "../CartItem/CartItem";
 
 export function Cart() {
-  const { cartItems } = useContext(EcommerceContext);
-  const [items, setItems] = useState([]);
+  const { cartItems, setCartItems, showCartItems } =
+    useContext(EcommerceContext);
+
+  const handleDelete = (e) => {
+    const id = e.target.parentNode.parentNode.id;
+
+    const updatedCartItems = cartItems.filter((item) => item.name !== id);
+
+    setCartItems(updatedCartItems);
+  };
 
   useEffect(() => {
-    setItems(cartItems);
-    console.log("hola");
+    console.log(cartItems);
   }, [cartItems]);
 
   return (
@@ -18,9 +25,14 @@ export function Cart() {
         <p>Cart</p>
       </div>
       <div className="cart-content">
-        {items.length > 0 ? (
-          items.map((cartItem) => (
-            <CartItem item={cartItem} key={cartItem.name} />
+        {cartItems.length > 0 ? (
+          cartItems.map((cartItem, index) => (
+            <CartItem
+              item={cartItem}
+              key={cartItem.name + index}
+              id={cartItem.name}
+              handleDelete={handleDelete}
+            />
           ))
         ) : (
           <div className="empty-msg">

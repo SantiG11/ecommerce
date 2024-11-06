@@ -1,8 +1,8 @@
 import "./CartItemStyle.css";
 
-export function CartItem({ item }) {
+export function CartItem({ item, id, handleDelete }) {
   return (
-    <div className="cart-item">
+    <div className="cart-item" id={id}>
       <img
         src={`${item.images[0]}`}
         alt="item-image"
@@ -21,6 +21,7 @@ export function CartItem({ item }) {
           src="src\assets\icon-delete.svg"
           alt="delete-icon"
           className="delete-icon"
+          onClick={handleDelete}
         />
       </div>
     </div>

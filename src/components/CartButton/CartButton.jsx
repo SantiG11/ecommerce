@@ -10,9 +10,15 @@ export function CartButton() {
   };
 
   return (
-    <div className="cart-button" onClick={handleClick}>
-      <img src="src/assets/icon-cart.svg" alt="cart-icon" />
-      {openCart && <Cart />}
+    <div className="cart-button">
+      <img
+        src="src/assets/icon-cart.svg"
+        alt="cart-icon"
+        onClick={handleClick}
+      />
+      <div className={openCart ? "" : "hidden"}>
+        <Cart />
+      </div>
     </div>
   );
 }

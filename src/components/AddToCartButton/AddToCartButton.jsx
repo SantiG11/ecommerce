@@ -7,10 +7,15 @@ export function AddToCartButton({ product }) {
     useContext(EcommerceContext);
 
   const handleAddToCart = (item) => {
-    const updatedItems = cartItems.length > 0 ? [...cartItems, item] : [item];
+    if (cartItems.some((product) => product.name === item.name)) {
+      return alert("Product already added to the cart");
+    }
+    if (item.amount < 1) return alert("No amount added");
+    const clonedItem = { ...item };
+    const updatedItems =
+      cartItems.length > 0 ? [...cartItems, clonedItem] : [clonedItem];
     setCartItems(updatedItems);
-    showCartItems();
-    console.log("click");
+    item.removeAmount();
   };
 
   return (

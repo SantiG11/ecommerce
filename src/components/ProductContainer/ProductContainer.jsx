@@ -12,9 +12,13 @@ export function ProductContainer() {
   // }, [items[0]]);
 
   return (
-    <div className="product-container">
-      <ProductImages images={items[0].images} />
-      <DetailsContainer item={items[0]} />
+    <div className="products">
+      {items.map((item) => (
+        <div className="product-container" key={item.name}>
+          <ProductImages images={item.images} />
+          <DetailsContainer item={item} />
+        </div>
+      ))}
     </div>
   );
 }

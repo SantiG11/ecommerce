@@ -16,6 +16,13 @@ export function AmountButton({ item }) {
     // console.log(item.amount);
   };
 
+  useEffect(() => {
+    // setAmount(item.amount);
+    if (item.amount === 0) {
+      setAmount(item.amount);
+    }
+  }, [item.amount]);
+
   return (
     <div className="amount-button">
       <div className="minus" onClick={handleSubstract}>

@@ -17,3 +17,9 @@ Now I'm working on adding the product to the cart, I'm not sure if I should let 
 I'll start just adding the product with the amount selected, reset the amount, and not letting modify it after added.
 
 I created a cartItems state to set the items that will be added to the cart with the addToCart component. And the cart component detect's if there's any item added, and create a cartItem component to display the product information.
+
+04/11/24 When a product is added to the cart a copy is stored in the cart and the original object amount gets reseted. The product can't be added to the cart if the amount is less than 1. 
+
+05/11/24 Now, when a product is added to the cart it can't be added again, there's an if ensuring there's no products with the same name in the cart.
+The delete button of the cart items now works.
+Added two more mock items and made the product container map through the items state and create a product container for each of them.
