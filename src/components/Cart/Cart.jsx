@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "./CartStyle.css";
 import { EcommerceContext } from "../../context/EcommerceContext";
 import { CartItem } from "../CartItem/CartItem";
+import { CheckoutButton } from "../CheckoutButton/CheckoutButton";
 
 export function Cart() {
   const { cartItems, setCartItems, showCartItems } =
@@ -16,7 +17,7 @@ export function Cart() {
   };
 
   useEffect(() => {
-    console.log(cartItems);
+    console.log(cartItems.length);
   }, [cartItems]);
 
   return (
@@ -39,6 +40,8 @@ export function Cart() {
             <p>Your cart is empty.</p>
           </div>
         )}
+
+        {cartItems.length > 0 && <CheckoutButton />}
       </div>
     </div>
   );

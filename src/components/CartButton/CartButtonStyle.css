@@ -1,11 +1,25 @@
-.cart-button {
+.cart-container {
   position: relative;
-
-  padding: 5px;
 }
 
-.cart-button:hover {
+.cart-button {
+  position: relative;
+  user-select: none;
+}
+
+.cart-button:hover,
+.cart-button:hover .cart-icon-btn {
   cursor: pointer;
+  fill: var(--black);
+}
+
+.cart-icon-btn {
+  width: 100%;
+  fill: var(--dark-grayish-blue);
+}
+
+.open {
+  fill: var(--black);
 }
 
 .hidden {

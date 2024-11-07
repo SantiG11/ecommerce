@@ -1,0 +1,16 @@
+.checkout-button {
+  color: var(--black);
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.checkout-button:hover {
+  cursor: pointer;
+  background-color: var(--pale-orange);
+}

@@ -23,3 +23,7 @@ I created a cartItems state to set the items that will be added to the cart with
 05/11/24 Now, when a product is added to the cart it can't be added again, there's an if ensuring there's no products with the same name in the cart.
 The delete button of the cart items now works.
 Added two more mock items and made the product container map through the items state and create a product container for each of them.
+
+06/11/24 The cart items show the total price. Added a checkout button
+
+07/11/24 I added a badge to show how many items are in the cart, where there are any. Improved the cart styling.
