@@ -3,4 +3,44 @@
   width: 40%;
   justify-content: space-evenly;
   min-width: 400px;
+  color: var(--dark-grayish-blue);
+}
+
+.close-container {
+  display: none;
+}
+
+.close-container svg:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+  .nav-bar {
+    color: #000;
+    background-color: var(--white);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: fixed;
+    left: 0;
+    min-width: 100px;
+    max-width: 300px;
+    width: 60vw;
+    height: 100%;
+    z-index: 100;
+  }
+
+  .close-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    padding: 0 15px;
+  }
 }

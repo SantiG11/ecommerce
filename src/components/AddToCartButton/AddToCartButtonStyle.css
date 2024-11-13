@@ -28,6 +28,8 @@
 
 @media (max-width: 1024px) {
   .add-to-cart-btn {
-    padding: 12px;
+    padding: 15px;
+    width: 100%;
+    max-width: none;
   }
 }

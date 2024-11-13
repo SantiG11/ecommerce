@@ -1,9 +1,9 @@
 .nav-link {
-  color: var(--dark-grayish-blue);
   display: flex;
   align-items: center;
   min-width: 20px;
   padding: 0 15px;
+  user-select: none;
 }
 
 .nav-link:hover {
@@ -14,4 +14,11 @@
 
 .link {
   margin-bottom: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .nav-link:hover {
+    border-bottom: none;
+    color: var(--dark-grayish-blue);
+  }
 }

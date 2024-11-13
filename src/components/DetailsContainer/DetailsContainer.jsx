@@ -14,9 +14,8 @@ export function DetailsContainer({ item }) {
       <div className="price-container">
         <p className="price">${item.price.toFixed(2)}</p>
         <div className="discount">{item.discount}%</div>
+        <p className="last-price">${item.realPrice.toFixed(2)}</p>
       </div>
-
-      <p className="last-price">${item.realPrice.toFixed(2)}</p>
 
       <div className="cart-buttons-container">
         <AmountButton item={item} />

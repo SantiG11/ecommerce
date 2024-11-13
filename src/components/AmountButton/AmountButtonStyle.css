@@ -2,6 +2,7 @@
   display: inline-flex;
   border-radius: 10px;
   overflow: hidden;
+  background-color: var(--light-grayish-blue);
 }
 
 .minus,
@@ -24,4 +25,12 @@
 .plus:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+  .amount-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

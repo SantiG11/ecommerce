@@ -5,7 +5,7 @@ export function Logo() {
     <div className="logo-container">
       <svg
         width="138"
-        height="20"
+        height="22"
         xmlns="http://www.w3.org/2000/svg"
         className="logo"
       >

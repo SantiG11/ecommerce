@@ -27,3 +27,12 @@ Added two more mock items and made the product container map through the items s
 06/11/24 The cart items show the total price. Added a checkout button
 
 07/11/24 I added a badge to show how many items are in the cart, where there are any. Improved the cart styling.
+Improved the responsiveness of the products section.
+
+08/11/24 The navbar gets fixed to the side when the screen width is smaller than 800px. 
+The header component has a state that shows or not the navbar and can be set to true when the openNav button is clicked and closed when the closeNav button is clicked.
+Right now it is done with conditional rendering but I just want to hide and show it with css properties.
+
+11/11/24 Created a backdrop modal to be activated when the navbar is open in the mobile version.
+
+12/11/24 Now the page looks good on desktop and mobile, but in some widths in between it looks bad.

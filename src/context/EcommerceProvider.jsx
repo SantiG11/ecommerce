@@ -7,11 +7,21 @@ export function EcommerceProvider({ children }) {
 
   const [cartItems, setCartItems] = useState([]);
 
+  const [modalBackdrop, setModalBackdrop] = useState(false);
+
   const showCartItems = () => console.log(cartItems);
 
   return (
     <EcommerceContext.Provider
-      value={{ items, setItems, cartItems, setCartItems, showCartItems }}
+      value={{
+        items,
+        setItems,
+        cartItems,
+        setCartItems,
+        showCartItems,
+        modalBackdrop,
+        setModalBackdrop,
+      }}
     >
       {children}
     </EcommerceContext.Provider>

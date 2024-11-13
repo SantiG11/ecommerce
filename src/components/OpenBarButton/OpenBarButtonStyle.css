@@ -1,0 +1,13 @@
+.open-bar-button {
+  display: flex;
+  align-items: center;
+}
+
+.open-bar-button svg {
+  margin-bottom: 1rem;
+}
+
+.open-bar-button svg:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

@@ -8,3 +8,9 @@
   width: 80vw;
   border-top: 1px solid hsla(220, 14%, 75%, 0.372);
 }
+
+@media (max-width: 800px) {
+  .horizontal-line {
+    display: none;
+  }
+}
