@@ -7,10 +7,6 @@ import { EcommerceContext } from "../../context/EcommerceContext";
 export function ProductContainer() {
   const { items } = useContext(EcommerceContext);
 
-  // useEffect(() => {
-  //   console.log(items[0]);
-  // }, [items[0]]);
-
   return (
     <div className="products">
       {items.map((item) => (

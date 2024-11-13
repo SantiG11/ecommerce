@@ -36,3 +36,5 @@ Right now it is done with conditional rendering but I just want to hide and show
 11/11/24 Created a backdrop modal to be activated when the navbar is open in the mobile version.
 
 12/11/24 Now the page looks good on desktop and mobile, but in some widths in between it looks bad.
+
+13/11/24 Added next and prev image buttons to the big image that can change the image to the next or the previous image in the array. They are only shown in the mobile version.

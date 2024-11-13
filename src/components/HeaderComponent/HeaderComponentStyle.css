@@ -26,5 +26,6 @@ header {
     padding: 0 5%;
     min-height: 80px;
     background-color: var(--white);
+    z-index: 5;
   }
 }

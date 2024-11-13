@@ -11,6 +11,27 @@
   border-radius: 1rem;
 }
 
+.prev-btn,
+.next-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 10px;
+}
+
+.next-btn {
+  position: absolute;
+  right: 10px;
+}
+
 @media (max-width: 800px) {
   .big-product-image-container {
     height: 300px;
@@ -21,5 +42,10 @@
     border-radius: 0;
     object-fit: cover;
     object-position: center;
+  }
+
+  .prev-btn,
+  .next-btn {
+    display: flex;
   }
 }

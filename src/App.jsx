@@ -1,6 +1,6 @@
 import "./App.css";
 import { HeaderComponent, ProductContainer } from "../src/components/index";
-import { TestComponent } from "./components/TestComponent";
+
 import { ModalBackdrop } from "./components/ModalBackdrop/ModalBackdrop";
 import { useContext } from "react";
 import { EcommerceContext } from "./context/EcommerceContext";
@@ -14,7 +14,6 @@ function App() {
       <HeaderComponent />
       <div className="horizontal-line"></div>
       <ProductContainer />
-      {/* <TestComponent /> */}
     </div>
   );
 }

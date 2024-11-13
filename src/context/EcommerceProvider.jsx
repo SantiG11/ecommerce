@@ -1,6 +1,6 @@
 import { EcommerceContext } from "./EcommerceContext";
 import { mockItems } from "../mocks/mock-items";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function EcommerceProvider({ children }) {
   const [items, setItems] = useState(mockItems);

@@ -1,47 +1,23 @@
-import { useContext, useEffect, useState } from "react";
 import { CartButton } from "../CartButton/CartButton";
 import { Logo } from "../Logo/Logo";
 import { NavBar } from "../NavBar/NavBar";
 import { UserIcon } from "../UserIcon/UserIcon";
 import "./HeaderComponentStyle.css";
-import { EcommerceContext } from "../../context/EcommerceContext";
+
 import { OpenBarButton } from "../OpenBarButton/OpenBarButton";
-import { ModalBackdrop } from "../ModalBackdrop/ModalBackdrop";
+import { useOpenNav } from "../../logic/useOpenNav";
 
 export function HeaderComponent() {
-  const [openNav, setOpenNav] = useState();
-  const { modalBackdrop, setModalBackdrop } = useContext(EcommerceContext);
-
-  useEffect(() => {
-    if (window.innerWidth > 800) {
-      setOpenNav(true);
-    } else {
-      setOpenNav(false);
-      setModalBackdrop(false);
-    }
-  }, []);
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 800) {
-      setOpenNav(true);
-    } else {
-      setOpenNav(false);
-      setModalBackdrop(false);
-    }
-  });
-
-  const handleCloseNav = () => {
-    setOpenNav(false);
-    setModalBackdrop(false);
-  };
-
-  const handleOpenNav = () => {
-    setOpenNav(true);
-    setModalBackdrop(true);
-  };
+  const { openNav, handleCloseNav, handleOpenNav, modalBackdrop } =
+    useOpenNav();
 
   return (
-    <header style={{ position: modalBackdrop && "relative" }}>
+    <header
+      style={{
+        position: modalBackdrop && "relative",
+        zIndex: modalBackdrop && "unset",
+      }}
+    >
       {openNav === false && <OpenBarButton openBar={handleOpenNav} />}
       <Logo />
       <NavBar closeBar={handleCloseNav} open={openNav} />

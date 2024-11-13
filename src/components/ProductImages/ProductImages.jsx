@@ -10,9 +10,29 @@ export function ProductImages({ images }) {
     setSelectedImage(images[index]);
   };
 
+  const handleNextImage = () => {
+    const i = images.indexOf(selectedImage);
+    console.log(i);
+    if (i < images.length - 1) {
+      setSelectedImage(images[i + 1]);
+    }
+  };
+
+  const handlePrevImage = () => {
+    const i = images.indexOf(selectedImage);
+    console.log(i);
+    if (i > 0) {
+      setSelectedImage(images[i - 1]);
+    }
+  };
+
   return (
     <div className="product-images-container">
-      <BigProductImage bigImage={selectedImage} />
+      <BigProductImage
+        bigImage={selectedImage}
+        nextImage={handleNextImage}
+        prevImage={handlePrevImage}
+      />
       <ProductImagesCarousel
         smallImages={images}
         method={selectImage}

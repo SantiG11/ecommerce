@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./ProductImageCarouselStyle.css";
 
 export function ProductImagesCarousel({ smallImages, method, selectedImage }) {
-  const [images, setImages] = useState(smallImages);
   const [imageSelected, setImageSelected] = useState(selectedImage);
 
   const handleSelection = (image) => {
@@ -11,7 +10,7 @@ export function ProductImagesCarousel({ smallImages, method, selectedImage }) {
 
   return (
     <div className="carousel">
-      {images.map((image, index) => {
+      {smallImages.map((image, index) => {
         return (
           <img
             onClick={() => {
