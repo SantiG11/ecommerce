@@ -8,7 +8,7 @@
 
 .product-image {
   width: 20%;
-
+  background-color: white;
   aspect-ratio: 1/1;
   border-radius: 10px;
 }

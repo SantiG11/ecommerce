@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProductImageCarouselStyle.css";
 
 export function ProductImagesCarousel({ smallImages, method, selectedImage }) {
@@ -7,6 +7,10 @@ export function ProductImagesCarousel({ smallImages, method, selectedImage }) {
   const handleSelection = (image) => {
     setImageSelected(image);
   };
+
+  useEffect(() => {
+    setImageSelected(selectedImage);
+  }, [selectedImage]);
 
   return (
     <div className="carousel">

@@ -12,7 +12,7 @@
 
 .close-container svg:hover {
   cursor: pointer;
-  opacity: 0.5;
+  fill: var(--dark-grayish-blue);
 }
 
 @media (max-width: 800px) {

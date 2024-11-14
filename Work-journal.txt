@@ -38,3 +38,5 @@ Right now it is done with conditional rendering but I just want to hide and show
 12/11/24 Now the page looks good on desktop and mobile, but in some widths in between it looks bad.
 
 13/11/24 Added next and prev image buttons to the big image that can change the image to the next or the previous image in the array. They are only shown in the mobile version.
+
+14/11/24 In the desktop version, when the product image is clicked a modal with the images is open to be seen bigger, and it can be closed clicking the x button. 

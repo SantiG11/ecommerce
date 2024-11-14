@@ -8,6 +8,7 @@ export const useOpenNav = () => {
     useEffect(() => {
         if (window.innerWidth > 800) {
             setOpenNav(true);
+            setModalBackdrop(false);
         } else {
             setOpenNav(false);
             setModalBackdrop(false);
@@ -17,6 +18,7 @@ export const useOpenNav = () => {
     window.addEventListener("resize", () => {
         if (window.innerWidth > 800) {
             setOpenNav(true);
+            setModalBackdrop(false);
         } else {
             setOpenNav(false);
             setModalBackdrop(false);

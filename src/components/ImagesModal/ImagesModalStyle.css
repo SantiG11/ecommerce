@@ -1,0 +1,16 @@
+.image-modal .big-product-image:hover {
+  cursor: auto;
+}
+
+.close-modal-container {
+  display: flex;
+  width: 400px;
+  justify-content: end;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.close-modal-container svg:hover {
+  cursor: pointer;
+  fill: var(--orange);
+}

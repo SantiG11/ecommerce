@@ -11,6 +11,10 @@
   border-radius: 1rem;
 }
 
+.big-product-image:hover {
+  cursor: pointer;
+}
+
 .prev-btn,
 .next-btn {
   display: none;
@@ -25,16 +29,18 @@
 .prev-btn {
   position: absolute;
   left: 10px;
+  padding-right: 3px;
 }
 
 .next-btn {
   position: absolute;
   right: 10px;
+  padding-left: 3px;
 }
 
 @media (max-width: 800px) {
   .big-product-image-container {
-    height: 300px;
+    height: 40vh;
     overflow: hidden;
   }
   .big-product-image {
@@ -44,8 +50,17 @@
     object-position: center;
   }
 
+  .big-product-image:hover {
+    cursor: auto;
+  }
+
   .prev-btn,
   .next-btn {
     display: flex;
+  }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    cursor: pointer;
   }
 }

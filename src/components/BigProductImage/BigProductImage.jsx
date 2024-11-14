@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import "./BigProductImage.css";
 
-export function BigProductImage({ bigImage, nextImage, prevImage }) {
+export function BigProductImage({
+  bigImage,
+  nextImage,
+  prevImage,
+  toggleModal,
+}) {
   return (
     <div className="big-product-image-container">
       <div className="prev-btn" onClick={prevImage}>
@@ -19,6 +24,7 @@ export function BigProductImage({ bigImage, nextImage, prevImage }) {
         src={`${bigImage}`}
         alt="Product image"
         className="big-product-image"
+        onClick={toggleModal}
       />
       <div className="next-btn" onClick={nextImage}>
         <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
