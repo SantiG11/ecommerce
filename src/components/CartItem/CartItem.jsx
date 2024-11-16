@@ -18,14 +18,16 @@ export function CartItem({ item, id, handleDelete }) {
           <p className="cart-item-total">${itemTotal.toFixed(2)}</p>
         </div>
       </div>
-      <div className="delete-icon-container">
-        <img
-          src="src\assets\icon-delete.svg"
-          alt="delete-icon"
-          className="delete-icon"
-          onClick={handleDelete}
-        />
-      </div>
+      {handleDelete && (
+        <div className="delete-icon-container">
+          <img
+            src="src\assets\icon-delete.svg"
+            alt="delete-icon"
+            className="delete-icon"
+            onClick={handleDelete}
+          />
+        </div>
+      )}
     </div>
   );
 }

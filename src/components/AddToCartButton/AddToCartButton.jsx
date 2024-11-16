@@ -3,7 +3,7 @@ import "./AddToCartButtonStyle.css";
 import { EcommerceContext } from "../../context/EcommerceContext";
 
 export function AddToCartButton({ product }) {
-  const { cartItems, setCartItems, showCartItems } =
+  const { cartItems, setCartItems, total, setTotal } =
     useContext(EcommerceContext);
 
   const handleAddToCart = (item) => {
@@ -15,6 +15,7 @@ export function AddToCartButton({ product }) {
     const updatedItems =
       cartItems.length > 0 ? [...cartItems, clonedItem] : [clonedItem];
     setCartItems(updatedItems);
+
     item.removeAmount();
   };
 

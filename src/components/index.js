@@ -10,7 +10,7 @@ export * from './Logo/Logo';
 export * from './HeaderComponent/HeaderComponent';
 export * from './DetailsContainer/DetailsContainer';
 export * from './CloseButton/CloseButton';
-export * from './CheckoutButton/CheckoutButton';
+export * from './CheckoutButton/OrangeButton';
 export * from './CartItem/CartItem';
 export * from './CartButton/CartButton';
 export * from './CartBadge/CartBadge';

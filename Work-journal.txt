@@ -40,3 +40,5 @@ Right now it is done with conditional rendering but I just want to hide and show
 13/11/24 Added next and prev image buttons to the big image that can change the image to the next or the previous image in the array. They are only shown in the mobile version.
 
 14/11/24 In the desktop version, when the product image is clicked a modal with the images is open to be seen bigger, and it can be closed clicking the x button. 
+Now when the checkout button is clicked a modal is opened showing the order with a button to finish the purchase, and when the buy button is clicked the cart gets emptyed and the modal is closed.
+

@@ -1,4 +1,4 @@
-.checkout-button {
+.orange-button {
   color: var(--black);
   background-color: var(--orange);
   display: flex;
@@ -8,9 +8,10 @@
   padding: 15px;
   border-radius: 10px;
   user-select: none;
+  font-weight: bold;
 }
 
-.checkout-button:hover {
+.orange-button:hover {
   cursor: pointer;
   background-color: var(--pale-orange);
 }

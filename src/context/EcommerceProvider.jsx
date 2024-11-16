@@ -1,6 +1,6 @@
 import { EcommerceContext } from "./EcommerceContext";
 import { mockItems } from "../mocks/mock-items";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function EcommerceProvider({ children }) {
   const [items, setItems] = useState(mockItems);
@@ -8,6 +8,8 @@ export function EcommerceProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   const [modalBackdrop, setModalBackdrop] = useState(false);
+
+  const [showCheckout, setShowCheckout] = useState(false);
 
   const showCartItems = () => console.log(cartItems);
 
@@ -21,6 +23,8 @@ export function EcommerceProvider({ children }) {
         showCartItems,
         modalBackdrop,
         setModalBackdrop,
+        showCheckout,
+        setShowCheckout,
       }}
     >
       {children}

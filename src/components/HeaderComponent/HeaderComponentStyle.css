@@ -6,6 +6,7 @@ header {
   height: 8vh;
   min-height: 100px;
   min-width: fit-content;
+  max-width: 1400px;
 }
 
 .right-buttons-container {
