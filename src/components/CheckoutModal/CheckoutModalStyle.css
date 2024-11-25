@@ -41,8 +41,8 @@
 
 .checkout-modal .cart-item .cart-item-details {
   font-size: 1rem;
-  justify-content: end;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.8rem;
 }
 
 .checkout-modal .cart-item img {

@@ -10,9 +10,12 @@
 }
 
 .cart-item-img {
-  height: 100%;
+  height: 90%;
+
   aspect-ratio: 1/1;
   border-radius: 3px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .cart-item-details {

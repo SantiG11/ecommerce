@@ -13,8 +13,10 @@ export function DetailsContainer({ item }) {
 
       <div className="price-container">
         <p className="price">${item.price.toFixed(2)}</p>
-        <div className="discount">{item.discount}%</div>
-        <p className="last-price">${item.realPrice.toFixed(2)}</p>
+        {item.discount && <div className="discount">{item.discount}%</div>}
+        {item.discount && (
+          <p className="last-price">${item.realPrice.toFixed(2)}</p>
+        )}
       </div>
 
       <div className="cart-buttons-container">

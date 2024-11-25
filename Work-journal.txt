@@ -42,3 +42,4 @@ Right now it is done with conditional rendering but I just want to hide and show
 14/11/24 In the desktop version, when the product image is clicked a modal with the images is open to be seen bigger, and it can be closed clicking the x button. 
 Now when the checkout button is clicked a modal is opened showing the order with a button to finish the purchase, and when the buy button is clicked the cart gets emptyed and the modal is closed.
 
+16/11/24 Now the page is responsive.
