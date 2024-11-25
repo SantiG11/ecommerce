@@ -23,7 +23,6 @@ export function HeaderComponent() {
       <NavBar closeBar={handleCloseNav} open={openNav} />
       <div className="right-buttons-container">
         <CartButton />
-        <UserIcon />
       </div>
     </header>
   );

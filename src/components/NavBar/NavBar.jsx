@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CloseButton } from "../CloseButton/CloseButton";
 import { NavLink } from "../NavLink.jsx/NavLink";
 import "./NavBarStyle.css";
@@ -9,11 +10,15 @@ export function NavBar({ closeBar, open }) {
         <CloseButton close={closeBar} />
       </div>
 
-      <NavLink text="Collections" />
-      <NavLink text="Men" />
-      <NavLink text="Women" />
-      <NavLink text="About" />
-      <NavLink text="Contact" />
+      <Link className="nav-link" to="/">
+        <p className="link">Home</p>
+      </Link>
+      <Link className="nav-link" to="/men">
+        <p className="link">Men</p>
+      </Link>
+      <Link className="nav-link" to="/women">
+        <p className="link">Women</p>
+      </Link>
     </div>
   );
 }

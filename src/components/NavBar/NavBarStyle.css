@@ -1,7 +1,7 @@
 .nav-bar {
   display: flex;
   width: 40%;
-  justify-content: space-evenly;
+  justify-content: start;
   min-width: 400px;
   color: var(--dark-grayish-blue);
 }
@@ -13,6 +13,33 @@
 .close-container svg:hover {
   cursor: pointer;
   fill: var(--dark-grayish-blue);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  min-width: 20px;
+  padding: 0 15px;
+  user-select: none;
+}
+
+.nav-link:hover {
+  color: var(--blakc);
+  border-bottom: 4px solid var(--orange);
+  cursor: pointer;
+}
+
+.link {
+  margin-bottom: 0.9rem;
 }
 
 @media (max-width: 800px) {
@@ -42,5 +69,10 @@
     height: 50px;
     margin-bottom: 1rem;
     padding: 0 15px;
+  }
+
+  .nav-link:hover {
+    border-bottom: none;
+    color: var(--dark-grayish-blue);
   }
 }

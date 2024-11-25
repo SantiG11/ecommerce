@@ -23,7 +23,6 @@
 
 .selected {
   outline: 3px solid var(--orange);
-  opacity: 0.5;
 }
 
 @media (max-width: 500px) {

@@ -3,9 +3,12 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { EcommerceProvider } from "./context/EcommerceProvider.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
-  <EcommerceProvider>
-    <App />
-  </EcommerceProvider>
+  <BrowserRouter>
+    <EcommerceProvider>
+      <App />
+    </EcommerceProvider>
+  </BrowserRouter>
 );

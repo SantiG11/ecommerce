@@ -7,7 +7,7 @@ export function DetailsContainer({ item }) {
     <div className="details-container">
       <h3 className="company-name">{item.brand}</h3>
 
-      <h1 className="product-name">{item.name}</h1>
+      <h2 className="product-name">{item.name}</h2>
 
       <p className="product-description">{item.description}</p>
 
