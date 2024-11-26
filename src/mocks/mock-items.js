@@ -1,3 +1,5 @@
+import BSImg1 from './images/Black Shoe/BSImg1.png'
+
 class Item {
     constructor({ brand, name, description, price = realPrice, discount = null, realPrice = null, images, amount = 0, thumbnail, department }) {
         this.brand = brand;
@@ -31,7 +33,7 @@ class Item {
 
 const whiteSneaker = new Item({ brand: 'Sneaker Company', name: 'White Sneakers', description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.", price: 125, discount: 50, realPrice: 250, images: ['src/mocks/images/White shoe/WSImg1.png', 'src/mocks/images/White shoe/WSImg2.png', 'src/mocks/images/White shoe/WSImg3.png', 'src/mocks/images/White shoe/WSImg4.png'], thumbnail: 'src/mocks/images/White shoe/WSImg1.png', department: 'men' })
 
-const blackSneaker = new Item({ brand: 'Sneaker Company', name: 'Black Sneackers', description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.", price: 250, images: ['src/mocks/images/Black Shoe/BSImg1.png', 'src/mocks/images/Black Shoe/BSImg2.png', 'src/mocks/images/Black Shoe/BSImg3.png', 'src/mocks/images/Black Shoe/BSImg4.png'], thumbnail: 'src/mocks/images/Black Shoe/BSImg1.png', department: 'men' })
+const blackSneaker = new Item({ brand: 'Sneaker Company', name: 'Black Sneackers', description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.", price: 250, images: [BSImg1, 'src/mocks/images/Black Shoe/BSImg2.png', 'src/mocks/images/Black Shoe/BSImg3.png', 'src/mocks/images/Black Shoe/BSImg4.png'], thumbnail: 'src/mocks/images/Black Shoe/BSImg1.png', department: 'men' })
 
 const yellowSneaker = new Item({ brand: 'Sneaker Company', name: 'Yellow Sneakers', description: "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.", price: 75, discount: 25, realPrice: 100, images: ['src/mocks/images/Yellow Shoe/YSImg1.png', 'src/mocks/images/Yellow Shoe/YSImg2.png', 'src/mocks/images/Yellow Shoe/YSImg3.png', 'src/mocks/images/Yellow Shoe/YSImg4.png'], thumbnail: 'src/mocks/images/Yellow Shoe/YSImg1.png', department: 'men' })
 
