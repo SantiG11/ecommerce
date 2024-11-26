@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./BigProductImage.css";
 
 export function BigProductImage({

@@ -18,13 +18,11 @@ export function ProductImages({ images }) {
     if (window.innerWidth < 800) return;
     setImageModal(true);
     setModalBackdrop(true);
-    console.log(imageModal);
   };
 
   const closeImageModal = () => {
     setImageModal(false);
     setModalBackdrop(false);
-    console.log(imageModal);
   };
 
   if (window.innerWidth < 800 && imageModal) {
@@ -36,10 +34,6 @@ export function ProductImages({ images }) {
       setModalBackdrop(true);
     }
   });
-
-  useEffect(() => {
-    console.log(imageModal);
-  }, [imageModal]);
 
   return (
     <div className={`product-images-container`}>
