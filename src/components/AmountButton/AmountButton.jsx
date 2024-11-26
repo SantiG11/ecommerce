@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AmountButtonStyle.css";
+import plusIcon from "/src/assets/icon-plus.svg";
+import minusIcon from "/src/assets/icon-minus.svg";
 
 export function AmountButton({ item }) {
   const [amount, setAmount] = useState(item.amount);
@@ -23,11 +25,11 @@ export function AmountButton({ item }) {
   return (
     <div className="amount-button">
       <div className="minus" onClick={handleSubstract}>
-        <img src="src\assets\icon-minus.svg" alt="minus-icon" />
+        <img src={minusIcon} alt="minus-icon" />
       </div>
       <p className="amount">{amount}</p>
       <div className="plus" onClick={handleAdd}>
-        <img src="src\assets\icon-plus.svg" alt="plus-icon" />
+        <img src={plusIcon} alt="plus-icon" />
       </div>
     </div>
   );

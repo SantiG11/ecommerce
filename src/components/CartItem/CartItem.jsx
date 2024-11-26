@@ -1,4 +1,5 @@
 import "./CartItemStyle.css";
+import deleteIcon from "/src/assets/icon-delete.svg";
 
 export function CartItem({ item, id, handleDelete }) {
   const itemTotal = item.amount * item.price;
@@ -21,7 +22,7 @@ export function CartItem({ item, id, handleDelete }) {
       {handleDelete && (
         <div className="delete-icon-container">
           <img
-            src="src\assets\icon-delete.svg"
+            src={deleteIcon}
             alt="delete-icon"
             className="delete-icon"
             onClick={handleDelete}

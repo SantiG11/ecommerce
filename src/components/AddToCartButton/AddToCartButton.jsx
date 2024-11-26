@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./AddToCartButtonStyle.css";
 import { EcommerceContext } from "../../context/EcommerceContext";
+import cartIcon from "/src/assets/icon-cart-black.svg";
 
 export function AddToCartButton({ product }) {
   const { cartItems, setCartItems } = useContext(EcommerceContext);
@@ -20,11 +21,7 @@ export function AddToCartButton({ product }) {
 
   return (
     <div className="add-to-cart-btn" onClick={() => handleAddToCart(product)}>
-      <img
-        src="src/assets/icon-cart-black.svg"
-        alt="cart-icon"
-        className="cart-icon"
-      />
+      <img src={cartIcon} alt="cart-icon" className="cart-icon" />
 
       <p className="add-to-cart">Add to cart</p>
     </div>
