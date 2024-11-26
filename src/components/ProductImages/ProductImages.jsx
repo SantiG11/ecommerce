@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { BigProductImage } from "../BigProductImage/BigProductImage";
 import { ProductImagesCarousel } from "../ProductImagesCarousel/ProductImagesCarousel";
 import "./ProductImages.css";

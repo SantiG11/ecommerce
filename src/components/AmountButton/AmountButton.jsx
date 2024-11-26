@@ -7,17 +7,14 @@ export function AmountButton({ item }) {
   const handleSubstract = () => {
     item.substractAmount();
     setAmount(item.amount);
-    // console.log(item.amount);
   };
 
   const handleAdd = () => {
     item.addAmount();
     setAmount(item.amount);
-    // console.log(item.amount);
   };
 
   useEffect(() => {
-    // setAmount(item.amount);
     if (item.amount === 0) {
       setAmount(item.amount);
     }

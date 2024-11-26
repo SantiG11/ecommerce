@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./NavLinkStyle.css";
 
 export function NavLink({ text }) {

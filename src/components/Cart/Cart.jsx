@@ -1,9 +1,8 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import "./CartStyle.css";
 import { EcommerceContext } from "../../context/EcommerceContext";
 import { CartItem } from "../CartItem/CartItem";
 
-import { CheckoutModal } from "../CheckoutModal/CheckoutModal";
 import { OrangeButton } from "../CheckoutButton/OrangeButton";
 
 export function Cart() {

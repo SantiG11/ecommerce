@@ -1,7 +1,7 @@
 import { useImage } from "../../logic/useImage";
 import { BigProductImage } from "../BigProductImage/BigProductImage";
 import { CloseButton } from "../CloseButton/CloseButton";
-import { ProductImages } from "../ProductImages/ProductImages";
+
 import { ProductImagesCarousel } from "../ProductImagesCarousel/ProductImagesCarousel";
 import "./ImagesModalStyle.css";
 

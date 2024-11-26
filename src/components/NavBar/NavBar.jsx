@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CloseButton } from "../CloseButton/CloseButton";
-import { NavLink } from "../NavLink.jsx/NavLink";
+
 import "./NavBarStyle.css";
 
 export function NavBar({ closeBar, open }) {

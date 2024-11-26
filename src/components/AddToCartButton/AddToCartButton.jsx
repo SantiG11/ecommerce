@@ -1,10 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./AddToCartButtonStyle.css";
 import { EcommerceContext } from "../../context/EcommerceContext";
 
 export function AddToCartButton({ product }) {
-  const { cartItems, setCartItems, total, setTotal } =
-    useContext(EcommerceContext);
+  const { cartItems, setCartItems } = useContext(EcommerceContext);
 
   const handleAddToCart = (item) => {
     if (cartItems.some((product) => product.name === item.name)) {
